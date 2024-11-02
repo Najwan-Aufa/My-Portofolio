@@ -1,0 +1,237 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #808080;
+}
+
+.navbar {
+  background: white;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  color: #00ced1;
+  transition: 0.3s color;
+}
+
+.login-button {
+  background-color: #00ced1;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: #00a6d9;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #000;
+}
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #00ced1;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover:before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+/* test sec */
+
+svg {
+  margin-bottom: -1px;
+}
+
+.jumbotron {
+  padding-top: 9rem;
+  color: white;
+  background-color: #080808;
+}
+
+#About {
+  background-color: #00ced1;
+}
+
+#project {
+  background-color: #080808;
+}
+
+#project h2 {
+  color: white;
+}
+
+#skill {
+  background-color: #00ced1;
+}
+
+#contact {
+  background-color: #080808;
+}
+
+footer {
+  background-color: #00ced1;
+}
+
+section {
+  padding-top: 9rem;
+}
+
+.coloor {
+  background-color: #00ced1;
+}
+.coloor:hover {
+  background-color: #65d100;
+}
+
+/* SKILL */
+/* SKILL BAR */
+
+/* Icon styles */
+.skill-icon {
+  font-size: 4rem; /* Icon size */
+  color: #333;
+}
+
+/* Specific colors for each icon */
+.html-icon {
+  color: #e34f26;
+}
+.css-icon {
+  color: #1572b6;
+}
+.js-icon {
+  color: #f7df1e;
+}
+.python-icon {
+  color: #3776ab;
+}
+.php-icon {
+  color: #777bb4;
+}
+
+.Skillmb {
+  margin-bottom: 7rem;
+}
+/* SKILL DONE */
+
+
+.gambar {
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: #00ced1;
+}
+.gambar2 {
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: #080808;
+}
+
+.custom-img-col {
+  margin-right: -20px; /* Kurangi jarak sebelah kanan kolom gambar */
+}
+
+.custom-text-col {
+  margin-left: -20px; /* Kurangi jarak sebelah kiri kolom teks */
+}
+
+
+/* button */
+.buttonct {
+  --green: #00ced1;
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(
+    to right,
+    rgba(0, 206, 209, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(0, 206, 209, 0.1) 100%
+  );
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(0, 206, 209, 0.4),
+    0 0 9px 3px rgba(0, 206, 209, 0.1);
+}
+
+.buttonct:hover {
+  color: #00ced1; /* Warna teks tetap #00ced1 ketika di-hover */
+  box-shadow: inset 0 0 10px rgba(0, 206, 209, 0.6),
+    0 0 9px 3px rgba(0, 206, 209, 0.2);
+}
+
+.buttonct:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(0, 206, 209, 0.1) 40%,
+    rgba(0, 206, 209, 0.1) 60%,
+    transparent 100%
+  );
+}
+
+.buttonct:hover:before {
+  transform: translateX(15em);
+}
+
+/* button done */
+
+.card-img-top {
+  height: 200px; /* Atur tinggi tetap */
+    object-fit: cover; /* Pastikan gambar mengisi ruang tanpa distorsi */
+    width: 100%; /* Pastikan gambar mengambil lebar penuh kartu */
+}
